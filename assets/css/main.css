@@ -695,6 +695,9 @@
 		border-bottom: none;
 		position: relative;
 	}
+	.icon img{
+		width: 30%;
+	}
 
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
@@ -829,11 +832,12 @@
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
+			/*width: 100%;*/
 		}
 
 			ul.icons li {
 				display: inline-block;
-				padding: 0 1em 0 0;
+				padding: 0 3em 30px 0;
 			}
 
 				ul.icons li:last-child {
@@ -1388,6 +1392,7 @@
 				font-weight: 400;
 				font-size: 0.8em;
 				padding: 0 1.25em;
+				margin:0 0 4em 0;
 			}
 
 			#header.alt .inner {
@@ -1397,6 +1402,7 @@
 				transition: opacity 2s ease;
 				opacity: 1;
 			}
+
 
 		body.is-loading #header.alt:before {
 			background-color: black;
@@ -1472,7 +1478,9 @@
 		border-radius: 4px;
 		text-align: center;
 	}
-
+	#intro p{
+		font-size:14px;
+	}
 		@media screen and (max-width: 736px) {
 
 			#intro {
@@ -1498,6 +1506,13 @@
 	#cta {
 		padding: 2em 0 0.1em 0;
 		text-align: center;
+	}
+	#cta .icons h4{
+		margin: 0;
+	}
+	#cta .icons p{
+		margin:0;
+		font-size:12px;
 	}
 
 		@media screen and (max-width: 736px) {
