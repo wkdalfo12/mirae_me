@@ -729,6 +729,7 @@
 				color: #666666;
 			}
 
+
 		@media screen and (max-width: 736px) {
 
 			.icon.major:before {
@@ -910,6 +911,13 @@
 					ul.actions.fit.small li {
 						padding: 0 0 0 0.5em;
 					}
+
+			@media screen and (max-width: 776px){
+				ul.icons li{
+					padding:0;
+					display:block;
+				}
+			}
 
 			@media screen and (max-width: 480px) {
 

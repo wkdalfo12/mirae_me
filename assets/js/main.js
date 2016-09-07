@@ -6,6 +6,22 @@
 
 (function($) {
 
+//top V
+ $('.inner a .fa').click(function(){
+	 var aa = $('#wrapper').offset().top;
+	 $('body,html').stop().animate({
+		 scrollTop:aa
+	 },800)
+	 return false;
+ })
+
+ // 맨 마지막 top버튼
+$('#cta .actions a').click(function(){
+	$('body,html').stop().animate({
+		scrollTop:0
+	},1000)
+})
+
 	skel.breakpoints({
 		xlarge: '(max-width: 1680px)',
 		large: '(max-width: 1280px)',
