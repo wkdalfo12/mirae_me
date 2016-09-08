@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
     <title>cafelatte_main</title>
 </head>
 <style>
@@ -77,7 +79,7 @@
                 </div>
             </section>
             <!-- 컨텐츠3 -->
-            <section class="conbox" id="section3">
+            <div class="conbox" id="section3">
                 <div class="innerbox">
                     <h2><img src="../img/section4_h2.png" alt="달콤한티라떼"></h2>
                     <div class="box">
@@ -101,7 +103,7 @@
                         </li>
                     </ul>
                 </div>
-            </section>
+            </div>
             <!-- 컨텐츠4 -->
             <section class="conbox" id="section4">
                 <div class="innerbox">
@@ -257,5 +259,36 @@
           </div>
         </div>
     </div>
+    <!-- 맨 밑 top아이콘 -->
+    <div class="contop">
+        <a href="">
+            <img src="../img/top.png" alt="top아이콘">
+        </a>
+    </div>
+    <!-- none -->
+    <div id="bg"></div>
+    <div id="popup">
+        <div class="box">
+            <div class="imgview">
+                <img src="../img/img0.jpg" alt="커피이미지">
+            </div>
+            <ul class="btn">
+                <li class="prev">
+                    <a href="#">
+                        <img src="../img/prev_btn.png" alt="<">
+                    </a>
+                </li>
+                <li class="next">
+                    <a href="#">
+                        <img src="../img/next_btn.png" alt=">">
+                    </a>
+                </li>
+            </ul>
+            <span>
+                <img src="../img/close_btn.png" alt="x버튼">
+            </span>
+        </div>
+    </div>
+
 </body>
 </html>
