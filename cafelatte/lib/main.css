@@ -150,8 +150,10 @@ body{position: relative;}
 }
 /*동영상*/
 #section4 .videobox .videolist{
+    width:2800px;
     position: relative;
     z-index: 999;
+    left:0;
 }
 #section4 .videobox .videolist li{
     width: 360px;

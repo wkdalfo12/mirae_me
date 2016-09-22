@@ -5,15 +5,23 @@
 */
 
 (function($) {
+// 네비
+$('.nav li a').click(function(){
+  $('html, body').animate({
+       scrollTop: $(this.hash).offset().top
+     })
+     return false;
+})
+
 
 //top V
- $('.inner a .fa').click(function(){
-	 var aa = $('#wrapper').offset().top;
-	 $('body,html').stop().animate({
-		 scrollTop:aa
-	 },800)
-	 return false;
- })
+ // $('.inner a .fa').click(function(){
+ //  var aa = $('#wrapper').offset().top;
+ //  $('body,html').stop().animate({
+ // 	 scrollTop:aa
+ //  },800)
+ //  return false;
+ // })
 
  // 맨 마지막 top버튼
 $('#cta .actions a').click(function(){

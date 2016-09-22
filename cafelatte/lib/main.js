@@ -21,6 +21,24 @@ $(function(){
   })
 
 
+// tv cf 광고영상 슬라이드스크롤
+var idx = 0;
+var lw = $('.videolist li').width()+40;
+var leftVal = 0;
+
+$('.videobtn .next').click(function(){
+
+   if(idx < 6){
+     leftVal = leftVal - lw;
+     $('.videolist').stop().animate({
+       left: leftVal
+     })
+      console.log(idx)
+      idx ++
+   }
+
+  return false;
+})
 
 
 // 맨 밑에 top 아이콘부분

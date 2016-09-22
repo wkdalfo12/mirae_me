@@ -12,16 +12,23 @@
 
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-	<body>
-
+	<body data-spy="scroll" data-target=".navbar">
+		<!-- 네비 -->
+		<div class="navbar">
+	    <ul class="nav nav-tabs" role="tablist" >
+	      <li><a href="#wrapper" >ABOUT ME</a></li>
+				<li><a href="#pro">PROJECTS</a></li>
+				<li><a href="#cta">SKILLS</a></li>
+	    </ul>
+	  </div>
 		<!-- Header -->
 			<header id="header" class="alt">
 				<div class="inner">
 					<h1>Mirae is me</h1>
 					<p>안녕하세요 저의 홈페이지 방문을 환영합니다.</p>
-					<a href="">
+					<!-- <a href="">
 						<i class="fa fa-chevron-circle-down fa-2x" aria-hidden="true"></i>
-					</a>
+					</a> -->
 				</div>
 			</header>
 
@@ -47,12 +54,12 @@
 					</section>
 
 				<!-- Items -->
-					<h3 style="text-align:center">PROJECTS</h3>
+					<h3 style="text-align:center" id="pro">PROJECTS</h3>
 					<section class="main items">
 
 						<article class="item">
 							<header>
-								<a href="http://pf.i-make.kr:8080/phomein/html/main/main.jsp" target="_blank"><img src="images/phomein.png" alt="포메인" /></a>
+								<a href="http://pf.i-make.kr:8080/phomein/html/main/main.jsp" target="_blank"><img src="images/phomein.png" alt="포메인" style="width:100%"/></a>
 								<h3>Phomein</h3>
 							</header>
 							<P>팀 프로젝트</P>
@@ -63,7 +70,7 @@
 						</article>
 						<article class="item">
 							<header>
-								<a href="http://miraeme.dothome.co.kr/" target="_blank"><img src="images/jyp.png" alt="jyp" /></a>
+								<a href="http://miraeme.dothome.co.kr/" target="_blank"><img src="images/jyp.png" alt="jyp" style="width:100%"/></a>
 								<h3>JYP(JJ Project) </h3>
 							</header>
 							<p>반응형 (개인)</p>
@@ -74,7 +81,18 @@
 						</article>
 						<article class="item">
 							<header>
-								<a href="http://www.nillanillavanilla.com/" target="_blank"><img src="images/nilla.png" alt="닐라닐라" /></a>
+								<a href="mirae_me/LKMS_-master/index.html" target="_blank"><img src="images/inbyu.jpg" alt="인바이유" style="width:100%"/></a>
+								<h3>INBYU</h3>
+							</header>
+							<p>반응형 메인페이지 시험</p>
+							<P>Javascript / J-query / bootstrap / css3 / html5</P>
+							<ul class="actions">
+								<li><a href="mirae_me/LKMS_-master/index.html" target="_blank" class="button">Click</a></li>
+							</ul>
+						</article>
+						<article class="item">
+							<header>
+								<a href="http://www.nillanillavanilla.com/" target="_blank"><img src="images/nilla.png" alt="닐라닐라" style="width:100%"/></a>
 								<h3>Nilla Nilla Vanilla </h3>
 							</header>
 							<p>메인 제작 참여</p>
@@ -85,7 +103,7 @@
 						</article>
 						<article class="item">
 							<header>
-								<a href=""><img src="images/img.png" alt="카페라떼" /></a>
+								<a href=""><img src="images/img.png" alt="카페라떼" style="width:100%"/></a>
 								<!-- <h3>Cafelatte</h3> -->
 							</header>
 							<p>웹 사이트 (개인)</p>
